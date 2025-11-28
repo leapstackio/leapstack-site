@@ -1,0 +1,123 @@
+---
+---
+
+<section id="about" class="about">
+    <div class="container about-inner">
+        <div class="about-visual">
+            <div class="image-frame">
+                <!-- Abstract representation of data/structure -->
+                <div class="data-stream">
+                    <span>101010</span>
+                    <span>010101</span>
+                    <span>110011</span>
+                    <span>001100</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-content">
+            <span class="font-tech text-gold">WHO WE ARE</span>
+            <h2>The Architects of <br />Enterprise Resource Planning</h2>
+            <p>
+                We don't just implement software; we design the digital infrastructure that supports your business's weight and ambition. 
+                With over a decade of specialized Netsuite experience, our team approaches every project with the precision of a structural engineer.
+            </p>
+            
+            <div class="stats-grid">
+                <div class="stat">
+                    <span class="stat-number text-gold">10+</span>
+                    <span class="stat-label font-tech">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number text-gold">500+</span>
+                    <span class="stat-label font-tech">Projects Delivered</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .about {
+        padding: var(--space-xl) 0;
+        background: linear-gradient(to bottom, var(--color-void), #080808);
+    }
+
+    .about-inner {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+        align-items: center;
+    }
+
+    @media (min-width: 992px) {
+        .about-inner {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .about-visual {
+        height: 400px;
+        border: 1px solid var(--color-steel);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .about-visual::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 1px dashed var(--color-steel);
+    }
+
+    .data-stream {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: var(--font-tech);
+        color: var(--color-steel);
+        font-size: 1.5rem;
+        opacity: 0.3;
+        user-select: none;
+    }
+
+    .about-content h2 {
+        margin: var(--space-sm) 0;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        opacity: 0.8;
+        margin-bottom: var(--space-md);
+    }
+
+    .stats-grid {
+        display: flex;
+        gap: var(--space-lg);
+        border-top: 1px solid var(--color-steel);
+        padding-top: var(--space-md);
+    }
+
+    .stat {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stat-number {
+        font-family: var(--font-heading);
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+        color: var(--color-silver);
+    }
+</style>

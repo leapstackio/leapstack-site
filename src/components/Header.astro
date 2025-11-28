@@ -1,0 +1,124 @@
+---
+---
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="/" class="logo">
+            <span class="font-tech">NETSUITE CONSULTING</span>
+            <span class="logo-text">LEAPSTACK</span>
+        </a>
+
+        <nav class="nav">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <a href="#contact" class="cta-button">
+            <span class="font-tech">START PROJECT</span>
+        </a>
+    </div>
+</header>
+
+<style>
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        padding: var(--space-sm) 0;
+        background: rgba(5, 5, 5, 0.7);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+    }
+
+    .logo .font-tech {
+        font-size: 0.6rem;
+        color: var(--color-gold);
+        letter-spacing: 0.2em;
+    }
+
+    .logo-text {
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+        color: #fff;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .nav {
+            display: flex;
+            gap: var(--space-md);
+        }
+    }
+
+    .nav-link {
+        font-family: var(--font-body);
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.7;
+        position: relative;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: var(--color-gold);
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover {
+        opacity: 1;
+        color: #fff;
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .cta-button {
+        border: 1px solid var(--color-steel);
+        padding: 0.75rem 1.5rem;
+        transition: all 0.3s ease;
+        display: none;
+    }
+
+    @media (min-width: 768px) {
+        .cta-button {
+            display: block;
+        }
+    }
+
+    .cta-button:hover {
+        border-color: var(--color-gold);
+        background: var(--color-gold-glow);
+    }
+
+    .cta-button span {
+        font-size: 0.75rem;
+        color: #fff;
+    }
+</style>

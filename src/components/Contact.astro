@@ -1,0 +1,158 @@
+---
+---
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-header">
+            <span class="font-tech text-gold">INITIATE PROJECT</span>
+            <h2>Ready to Build?</h2>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p>
+                    Discuss your architecture with our senior consultants. 
+                    We provide a preliminary audit for qualified enterprises.
+                </p>
+                
+                <a href="mailto:hello@leapstack.com" class="email-link">
+                    hello@leapstack.com
+                </a>
+
+                <div class="office-details">
+                    <div class="detail">
+                        <span class="font-tech">HEADQUARTERS</span>
+                        <p>100 Enterprise Way<br>Silicon Valley, CA</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name" class="font-tech">NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="font-tech">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" />
+                </div>
+                <div class="form-group">
+                    <label for="message" class="font-tech">PROJECT BRIEF</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Describe your requirements"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>SEND BLUEPRINT</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<style>
+    .contact {
+        padding: var(--space-xl) 0;
+        border-top: 1px solid var(--color-steel);
+    }
+
+    .contact-header {
+        margin-bottom: var(--space-lg);
+        text-align: center;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    @media (min-width: 992px) {
+        .contact-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .contact-info p {
+        font-size: 1.2rem;
+        margin-bottom: var(--space-md);
+        opacity: 0.8;
+    }
+
+    .email-link {
+        font-family: var(--font-heading);
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        color: #fff;
+        display: block;
+        margin-bottom: var(--space-lg);
+        text-decoration: underline;
+        text-decoration-color: var(--color-gold);
+        text-underline-offset: 8px;
+    }
+
+    .email-link:hover {
+        color: var(--color-gold);
+    }
+
+    .office-details {
+        border-top: 1px solid var(--color-steel);
+        padding-top: var(--space-md);
+    }
+
+    .detail span {
+        color: var(--color-gold);
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Form */
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-group label {
+        font-size: 0.75rem;
+        color: var(--color-steel);
+    }
+
+    .form-group input,
+    .form-group textarea {
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--color-steel);
+        padding: 1rem 0;
+        color: #fff;
+        font-family: var(--font-body);
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-bottom-color: var(--color-gold);
+    }
+
+    .submit-btn {
+        background: transparent;
+        border: 1px solid var(--color-gold);
+        color: var(--color-gold);
+        padding: 1rem 2rem;
+        font-family: var(--font-tech);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        align-self: flex-start;
+        margin-top: var(--space-sm);
+    }
+
+    .submit-btn:hover {
+        background: var(--color-gold);
+        color: #000;
+    }
+</style>
